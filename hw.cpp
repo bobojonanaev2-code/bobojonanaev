@@ -1,9 +1,7 @@
 #include <iostream>
-#include <unistd.h>
+#include "stone.h" 
 
-extern char **environ;
-int main() {
-for(char **env=environ; *env != nullptr; env++) {
-std::cout << *env << std::endl;
+int main(){
+    getHelp();
 }
-}
+
